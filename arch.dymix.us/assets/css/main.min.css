@@ -826,6 +826,8 @@ label.error {
   margin-bottom: 50px;
 }
 .project-item__img-link {
+  /* height: 80%;
+  width: 100%; */
   display: block;
   background: radial-gradient(1453.82px at 0 100%, #333 0, #2b2b2b 100%);
 }
