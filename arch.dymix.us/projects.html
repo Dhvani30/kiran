@@ -1,130 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from arch.dymix.us/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 17:42:08 GMT -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Mirrored from arch.dymix.us/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 17:42:08 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Projects</title>
 
     <!-- Lib styles -->
-    <link rel="stylesheet" href="libs/bootstrap-4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/simpleLightbox/simplelightbox.min.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="libs/slick/slick.css" />
+    <link rel="stylesheet" href="libs/simpleLightbox/simplelightbox.min.css" />
 
     <!-- Font styles -->
-    <link rel="stylesheet" href="assets/fonts/NunitoSans/NunitoSans.css">
+    <link rel="stylesheet" href="assets/fonts/NunitoSans/NunitoSans.css" />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
 
     <!-- Site styles -->
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css" />
 
-    <link rel="icon" href="favicon.png"/>
-</head>
+    <link rel="icon" href="favicon.png" />
+  </head>
 
-<body>
+  <body>
     <header id="main-header" class="site-header is-fixed">
-        <div class="page-backdrop"></div>
-        <div class="container">
-            <div class="d-flex align-items-center">
-                <a href="index-2.html" class="logo header-logo"><img src="images/logo.png" alt=""></a>
-                <div class="header-nav ml-auto">
-                    <button class="menu-toggle icomoon-menu" id="js-open-menu"></button>
-                    <div class="main-menu-wrap" id="js-main-menu">
-                        <button class="menu-toggle menu-close icomoon-left-arrow-long" id="js-close-menu"></button>
-                        <ul class="nav main-menu">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="projects.html">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="page-backdrop"></div>
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <a href="index-2.html" class="logo header-logo"
+            ><img src="images/logo.png" alt=""
+          /></a>
+          <div class="header-nav ml-auto">
+            <button class="menu-toggle icomoon-menu" id="js-open-menu"></button>
+            <div class="main-menu-wrap" id="js-main-menu">
+              <button
+                class="menu-toggle menu-close icomoon-left-arrow-long"
+                id="js-close-menu"
+              ></button>
+              <ul class="nav main-menu">
+                <li class="nav-item active">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <main id="main-content" class="site-content bg-lines">
-        <section class="page-title projects-title fade-from-top">
-            <div class="container">
-                <h1 class="page-title__h fade-from-top" data-delay="100">Projects</h1>
-                <div class="page-title__text fade-from-top" data-delay="200">
-                    I have a passion for simplicity and sustainability, always balancing form with function and delight.
-                </div>
-            </div>
-        </section>
+      <section class="page-title projects-title fade-from-top">
+        <div class="container">
+          <h1 class="page-title__h fade-from-top" data-delay="100">Projects</h1>
+          <div class="page-title__text fade-from-top" data-delay="200">
+            I have a passion for simplicity and sustainability, always balancing
+            form with function and delight.
+          </div>
+        </div>
+      </section>
 
-        <section class="projects">
-            <div class="container">
-                <!-- <div class="project-filter js-project-filter fade-from-top" data-delay="300">
-                    <button class="project-filter__btn active" data-filter="*">All Projects<span class="count">31</span></button>
-                    <button class="project-filter__btn" data-filter=".interior">Interior Design<span class="count">14</span></button>
-                    <button class="project-filter__btn" data-filter=".office">Office<span class="count">3</span></button>
-                    <button class="project-filter__btn" data-filter=".industrial">Industrial<span class="count">8</span></button>
-                    <button class="project-filter__btn" data-filter=".studio">Design Studio<span class="count">6</span></button>
-                </div> -->
-                <div class="row project-list js-project-list fade-from-top-children">
-                    <div class="col-md-6 project-item interior">
-                        <div class="slide-image-wrap">
-                            <img src="images/1.jpg" alt="" class="project-item__img">
-                        </div>
-                    </div>
-                    <div class="col-md-6 project-item interior">
-                        <div class="slide-image-wrap">
-                            <img src="images/2.jpg" alt="" class="project-item__img">
-                        </div>
-                    </div>
-                    <div class="col-md-6 project-item office">
-                        <div class="slide-image-wrap">
-                            <img src="images/3.jpg" alt="" class="project-item__img">
-                        </div>
-                    </div>
-                    <div class="col-md-6 project-item industrial">
-                        <div class="slide-image-wrap">
-                            <img src="images/4.jpg" alt="" class="project-item__img">
-                        </div>
-                    </div>
-                </div>
-                
+      <section class="projects">
+        <div class="container">
+          <div
+            class="project-filter js-project-filter fade-from-top"
+            data-delay="300"
+          >
+            <button class="project-filter__btn active" data-filter="*">
+              All Projects<span class="count"></span>
+            </button>
+            <button class="project-filter__btn" data-filter=".interior">
+              Interior Design<span class="count"></span>
+            </button>
+            <!-- <button class="project-filter__btn" data-filter=".office">
+              Office<span class="count"></span>
+            </button> -->
+            <!-- <button class="project-filter__btn" data-filter=".studio">
+                Buildings<span class="count"></span>
+            </button> -->
+            <button class="project-filter__btn" data-filter=".industrial">
+              Buildings<span class="count"></span>
+            </button>
+          </div>
+          <div class="row project-list js-project-list fade-from-top-children">
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/1.jpg" class="project-link">
+                  <img src="images/1.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
             </div>
-        </section>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/2.jpg" class="project-link">
+                  <img src="images/2.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/3.jpg" class="project-link">
+                  <img src="images/3.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/4.jpg" class="project-link">
+                  <img src="images/4.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/5.jpg" class="project-link">
+                  <img src="images/5.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item industrial">
+              <div class="slide-image-wrap">
+                <a href="images/6.jpg" class="project-link">
+                  <img src="images/6.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item industrial">
+              <div class="slide-image-wrap">
+                <a href="images/7.jpg" class="project-link">
+                  <img src="images/7.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/8.jpg" class="project-link">
+                  <img src="images/8.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item industrial">
+              <div class="slide-image-wrap">
+                <a href="images/9.jpg" class="project-link">
+                  <img src="images/9.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/11.jpg" class="project-link">
+                  <img src="images/11.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item industrial">
+              <div class="slide-image-wrap">
+                <a href="images/12.jpg" class="project-link">
+                  <img src="images/12.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item industrial">
+              <div class="slide-image-wrap">
+                <a href="images/13.jpg" class="project-link">
+                  <img src="images/13.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item industrial">
+              <div class="slide-image-wrap">
+                <a href="images/14.jpg" class="project-link">
+                  <img src="images/14.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/15.jpg" class="project-link">
+                  <img src="images/15.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/16.jpg" class="project-link">
+                  <img src="images/16.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/17.jpg" class="project-link">
+                  <img src="images/17.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/19.jpg" class="project-link">
+                  <img src="images/19.jpg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 project-item interior">
+              <div class="slide-image-wrap">
+                <a href="images/20.jpeg" class="project-link">
+                  <img src="images/20.jpeg" alt="" class="project-item__img" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="main-footer" class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="widget-col col-lg-2">
-                    <div class="widget widget-logo">
-                        <a href="index-2.html" class="logo footer-logo"><img src="images/logo.png" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="widget-col col-lg-3">
-                    <div class="widget widget-text">
-                        <p>KDM Designer</p>
-                        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=kdpmistry@gmail.com">kdpmistry@gmail.com</a></p>
-                        <p>+91 9820197862</p>
-                    </div>
-                </div>
-
-                <div class="widget-col col-lg-3">
-                    <div class="widget widget-text">
-                        <p>C-802, Trilok Park,</p>
-                        <p>Adukia Road, Kandivali (W),</p>
-                        <p>Mumbai 400 067.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="widget-col col-lg-2">
+            <div class="widget widget-logo">
+              <a href="index-2.html" class="logo footer-logo"
+                ><img src="images/logo.png" alt=""
+              /></a>
             </div>
+          </div>
+
+          <div class="widget-col col-lg-3">
+            <div class="widget widget-text">
+              <p>KDM Designer</p>
+              <p>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=kdpmistry@gmail.com"
+                  >kdpmistry@gmail.com</a
+                >
+              </p>
+              <p>+91 9820197862</p>
+            </div>
+          </div>
+
+          <div class="widget-col col-lg-3">
+            <div class="widget widget-text">
+              <p>C-802, Trilok Park,</p>
+              <p>Adukia Road, Kandivali (W),</p>
+              <p>Mumbai 400 067.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize SimpleLightbox
+        var lightbox = new SimpleLightbox(".project-link", {
+          captions: true, // Enable captions
+          captionsData: "alt", // Use the 'alt' attribute for captions
+          captionDelay: 250, // Delay before showing captions
+        });
+      });
+    </script>
 
     <!-- Lib scripts  -->
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
@@ -139,6 +283,5 @@
 
     <!-- Site scripts  -->
     <script src="assets/js/common.min.js"></script>
-</body>
-
+  </body>
 </html>
