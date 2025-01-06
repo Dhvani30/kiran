@@ -739,9 +739,23 @@ label.error {
 }
 .hero-slide {
   background-repeat: no-repeat;
-  background-position: 50%;
+  /* background-position: 50%; */
+  background-position: center center;
   background-size: cover;
+  height: 100vh;
 }
+.hero-slide img{
+  max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 768px) {
+    .hero-slide {
+        height: 60vh; /* Adjust height for mobile screens */
+        background-position: center top; /* Adjust the position for mobile */
+    }
+}
+
 .js-hero-slider:not(.slick-initialized) {
   opacity: 0;
 }
