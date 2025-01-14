@@ -497,7 +497,7 @@
       </div>
     </footer>
 
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Initialize SimpleLightbox
         var lightbox = new SimpleLightbox(".project-link", {
@@ -506,7 +506,25 @@
           captionDelay: 250, // Delay before showing captions
         });
       });
-    </script>
+    </script> -->
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize SimpleLightbox
+    var lightbox = new SimpleLightbox(".project-link", {
+      captions: true, // Enable captions
+      captionsData: "alt", // Use the 'alt' attribute for captions
+      captionDelay: 250, // Delay before showing captions
+      preload: 2 // Preload only the first 2 images
+    });
+
+    // Lazy load images
+    const images = document.querySelectorAll('.project-item img');
+    images.forEach(img => {
+      img.setAttribute('loading', 'lazy');
+    });
+  });
+</script>
+
 
     <!-- Lib scripts  -->
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
