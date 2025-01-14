@@ -479,6 +479,10 @@ label.error {
   min-height: 400px;
   min-height: 50vh;
 }
+.bg-section.content-bottom.home-bg
+{
+  z-index: 1020;
+}
 .bg-section.content-bottom {
   display: -ms-flexbox;
   display: flex;
@@ -505,9 +509,33 @@ label.error {
   transform: none !important;
   transition: none !important;
 }
-.site-header + #main-content {
+/* .site-header + #main-content {
   padding-top: 64px;
+} */
+
+/* Fix content overlap with the header */
+.site-header.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
+/* Add padding to the main content to avoid overlap */
+#main-content {
+  padding-top: 250px; 
+}
+
+@media (max-width: 801px) {
+  #main-content {
+    padding-top: 250px; 
+  }
+}
+
+
+
 .site-header.sticky {
   position: fixed;
   padding: 15px 0;
@@ -847,46 +875,109 @@ label.error {
   padding-bottom: 55px;
 }
 .project-list {
-  margin-bottom: 40px; /* Add space below the project images */
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
+.project-list1 {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 120px; /* Increased slightly */
+  margin-top: 120px; /* Increased slightly */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-list1 + .bg-section {
+  margin-top: 170px; /* Increased margin for even more spacing */
+}
 
 .bg-section {
-  margin-top: 40px; /* Add space above "The culture of design" section */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 20px; /* Increased padding */
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.abs-box {
+  position: relative;
+  z-index: 3;
 }
 
 .project-item {
-   position: relative;  
-  overflow: hidden; 
-  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 170px; /* Adjusted for larger spacing */
 }
+
 .project-item__img-link {
-  /* height: 80%;
-  width: 100%; */
   display: block;
-  /* background: radial-gradient(1453.82px at 0 100%, #333 0, #2b2b2b 100%); */
   background: #181114;
 }
+
 .project-item__img {
   width: 100%;
   transition: opacity 0.3s;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(164, 164, 164, 0.1);
+  z-index: 3;
 }
- .project-item__img {
-        /* width: 100%; */
-        /* height: 400px;  */
-        /* object-fit: cover;  */
-        border-radius: 8px; 
-        box-shadow: 0 4px 6px rgba(164, 164, 164, 0.1); 
-    }
 
-    .slide-image-wrap {
-        overflow: hidden; /* Ensures content doesn't spill outside the image container */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
+/* Mobile-specific tweaks */
+/* @media (max-width: 768px) {
+  .project-list {
+    gap: 15px; 
+  }
+
+  .project-item__img {
+    width: 90%; 
+    margin: 0 auto; 
+  }
+} */
+@media (max-width: 768px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 2 columns layout */
+    gap: 15px; /* Space between items */
+  }
+
+  .project-item {
+    display: flex;
+    flex-direction: column; /* Stack items */
+  }
+
+  .project-item__img {
+    width: 100%; /* Full width for images */
+    max-width: 100%; /* Prevent overflow */
+  }
+}
+
+
+
+/* 
+@media (max-width: 768px) {
+  .project-item__img {
+    width: 100%; 
+    max-width: 100%; 
+  }
+} */
+
+
+.slide-image-wrap {
+  overflow: hidden; /* Ensures content doesn't spill outside the image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .project-item__img-link:hover .project-item__img {
   opacity: 0.8;
 }
