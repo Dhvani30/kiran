@@ -1692,6 +1692,21 @@ h4.section-text-offset {
   }
 }
 @media only screen and (max-width: 768px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 2 columns layout */
+    gap: 15px; /* Space between items */
+  }
+
+  .project-item {
+    display: flex;
+    flex-direction: column; /* Stack items */
+  }
+
+  .project-item__img {
+    width: 100%; /* Full width for images */
+    max-width: 100%; /* Prevent overflow */
+  }
   .offices-list {
     width: 100%;
     position: static;
@@ -2054,16 +2069,6 @@ h4.section-text-offset {
   }
   .icon-box {
     width: 74%;
-  }
-  .event-single-back {
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-  }
-  .event-single-wrap {
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
   }
 }
 @media only screen and (min-width: 1360px) {
